@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="get" action="">
+        <fieldset>
+            <legend>
+                Thông tin cá nhân
+            </legend>
+            Full name: <input type="text" name="fullten" id="" placeholder="A" required><br>
+            Username: <input type="text" name="ten" id="" maxlength="20" placeholder="Tối đa 20 kí tự" required><br>
+            Email: <input type="email" name="email" required id=""><br>
+            Password: <input type="password" name="pass" id="" required><br>
+            Confirm Password: <input type="password" name="conpass" id="" required><br>
+            SĐT: <input type="number" name="sdt" id="" maxlength="10"><br>
+        </fieldset>
+        <fieldset>
+            <br>
+            <legend>
+                Thông tin cơ bản
+            </legend>
+            <fieldset>
+                <Legend>
+                    Địa chỉ
+                </Legend>
+                Số nhà: <input type="text" name="num" id=""><br>
+                phường/xã: <input type="text" name="xa" id=""><br>
+                quận/huyện: <input type="text" name="quan" id=""><br>
+                tỉnh/thành phố: <input type="text" name="tp" id=""><br>
+            </fieldset>
+            Nghề nghiệp: <select name="nghe" id="">
+                <option value="">Học sinh-Sinh viên</option>
+                <option value="">Nhân viên văn phòng</option>
+                <option value="">Công nhân</option>
+                <option value="">Khác</option>
+            </select><br>
+            Ngày sinh: <input type="date" name="sinh" id=""> <br>
+            Giới tính: <br>
+            <input type="checkbox" name="gt" id=""> Nam <br>
+            <input type="checkbox" name="gt" id=""> Nữ <br>
+            <fieldset>
+                <legend>
+                    Avatar
+                </legend>
+                <input type="file" name="ul" id=""><br>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Thông tin thêm
+                </legend>
+                <textarea name="more" id="" cols="120" rows="10"></textarea>
+            </fieldset>
+        </fieldset>
+        <button type="reset">Reset</button> <button type="submit">Sign up</button>
+    </form>
+</body>
+
+</html>
