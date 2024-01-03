@@ -1,141 +1,51 @@
-@charset "utf-8";
-
-* {
-	margin: 0;
-	padding: 0;
-}
-
-body {
-	font-family: "Segoe UI", Arial, sans-serif;
-}
-
-ol, ul {
-	list-style: none;
-}
-
-img {
-	border: none;
-	vertical-align: top;
-}
-
-div#layout {
-	border: 1px solid #a3a2a3;
-	margin: 20px auto;
-	width: 900px;
-}
-div.hLeft{
-	float: left;
-}
-div.hRight{
-	float: right;
-}
-#gNav{
-	clear: both;
-}
-ul.hNav{
-	padding-bottom: 10px;
-}
-ul.hButton li{
-	display: inline;
-}
-ul.hNav li{
-	display: inline;
-	border-right: 1px solid #000;
-	padding: 0 5px 0 4px;
-}
-div.hRight ul.hButton{
-	text-align: right;
-	margin-bottom: 37px;
-}
-div.hRight ul li a{
-	text-decoration: none;
-}
-ul.hNav li.last{
-	border: none;
-	padding-right: 0;
-}
-div#header{
-	padding: 10px;
-}
-div#gNav ul li{
-	display: inline;
-	padding: 0 10px;
-	border-right: 1px solid white;
-}
-div#gNav ul li.last{
-	border: none;
-}
-div#gNav ul{
-	background-image: url(../img/bg_gnav.gif);
-	border: 1px solid #000;
-	padding: 12px 0;
-	height: 22px;
-}
-div#gNav ul li a{
-	text-decoration:none ;
-	color: white;
-	font-weight: bold;
-}
-div#gNav ul li a:hover{
-	color:yellow;
-}
-div#content{
-	float: left;
-	width: 620px;
-}
-div#sidebar{
-	float: right;
-	width: 240px;
-}
-div#footer{
-	clear: both;
-}
-div#content h2{
-	border-bottom: 1px solid #666666;
-	font-size: 120%;
-	margin-bottom: 10px;
-}
-div#content div.newProduct p.image{
-	float: left;
-	width: 241px;
-}
-div#content ul.thumbList{
-	clear: both;
-	background:  #f9f8f8;
-	border: 1px solid #ebeaea;
-	padding: 10px;
-}
-div#content ul.thumbList li{
-	display: inline;
-	padding-right: 8px;
-}
-div#content div.newProduct{
-	margin-bottom: 20px;
-}
-div#content div.newProduct div{
-	float: right;
-	width: 350px;
-}
-div#content div.newProduct div h3{
-	color: #5870e6;
-	margin-bottom: 10px;
-}
-div#pageBody{
-	padding: 20px 10px;
-	padding-right: 10px; ;
-}
-div#content div.newProduct:after{
-	clear: both;
-	content: ".";
-	display: block;
-	height: 0;
-	line-height: 0;
-	visibility: hidden;
-
-}
-div#content dl.news{
-	padding:10px 0 40px 10px ;
-}
-div#content dl.news dd{
-	border: 1px dotted black;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/deco.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="row">
+        <div class="col-2">
+            <form>
+                <label for="stuid">Id</label>
+                <input type="text" name="" id="stuid"> <br>
+                <label for="name">Name</label>
+                <input type="text" id="name"> <br>
+                <label for="score">score</label>
+                <input type="text" name="" id="score"> <br>
+                Gender <input type="radio" name="genders" id="gender" checked> Male
+                <input type="radio" name="genders" id=""> Female <br>
+                <button id ="btn" class=".btn-green">Submit</button>
+                <button id="btn-search">Search</button>
+                <label for="chk-filter">Filter for pass student</label>
+                <input type="checkbox" name="" id="chk-filter">
+            </form>
+        </div>
+        <div class="col-10">
+            <table>
+                <thead>
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Score
+                    </th>
+                    <th>
+                        Gender
+                    </th>
+                </thead>
+                <tbody id="info">
+                </tbody>
+            </table>
+            <script src="js/script.js"></script>
+        </div>
+    </div>
+</body>
+</html>
